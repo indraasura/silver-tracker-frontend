@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.landing-wrapper{
+    position: relative;
+    height: 100vh;
+}
+
+.statcard-container{
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.statcard{
+    padding: 2em;
+    color: rgb(27, 27, 27);
+    margin: 1em;
+    min-width: 25%;
+    border-radius: 10px;
+    box-shadow: rgb(202, 202, 202) 4px 5px 10px;
+}
+
+.statcard h2, .statcard p{
+    text-align: center;
+}
+
+.statcard p{
+    margin-top: 1em;
+    font-size: 1.5em;
+    font-weight: medium;
+}
+
+.totalPopulation-card{
+    color: rgb(240, 137, 41);
+}
+
+.totalCases-card{
+    color: rgb(255, 82, 82);
+}
+
+.totalActive-card{
+    color: rgb(102, 102, 194);
+}
+
+.totalRecovered-card{
+    color: rgb(77, 195, 77);
+}
+
+.totalDeaths-card{
+    color: rgb(95, 95, 95);
+}
+
+.totalVaccinated-card{
+    color: rgb(153, 68, 153);
+}
