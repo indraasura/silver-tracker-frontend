@@ -4,13 +4,36 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+}
+
 .landing-wrapper{
     position: relative;
     height: 100vh;
 }
 
+.society-data-container{
+    position: absolute;
+    width: 100%;
+    top: 30%;
+}
+
+.society-data-container h1, .house-data-wrapper h1{
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
 .statcard-container{
     position: absolute;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -20,7 +43,7 @@
     padding: 2em;
     color: rgb(27, 27, 27);
     margin: 1em;
-    min-width: 25%;
+    width: 20%;
     border-radius: 10px;
     box-shadow: rgb(202, 202, 202) 4px 5px 10px;
 }
@@ -29,9 +52,13 @@
     text-align: center;
 }
 
+.statcard h2{
+    font-size: 1em;
+}
+
 .statcard p{
     margin-top: 1em;
-    font-size: 1.5em;
+    font-size: .9em;
     font-weight: medium;
 }
 
@@ -57,4 +84,62 @@
 
 .totalVaccinated-card{
     color: rgb(153, 68, 153);
+}
+
+.header-container{
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translateX(-50%);
+    width: 80%;
+}
+
+.header{
+    text-align: center;
+}
+
+.header h1{
+    font-size: 1.7em;
+    color: rgb(238, 132, 149);
+}
+
+.header p{
+    color: rgb(199, 115, 199);
+    font-weight: 700;
+}
+
+.house-data-wrapper{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    top: 90%;
+}
+
+.house-data-list{
+    width: 100%;
+    display: flex;
+}
+
+.houseIcon{
+    position: relative;
+    top: 10%;
+    width: 50%;
+}
+
+.houseCard{
+    cursor: pointer;
+    background: whitesmoke;
+    width: 60%;
+    height: 80%;
+    border-radius: 10px;
+    margin: 0 1em 1em 1em;
+    padding: .5em;
+    text-align: center;
+    box-shadow: rgb(199, 199, 199) 4px 5px 10px;
+}
+
+.houseCard h4{
+    margin-top: .7em;
+    font-size: .8em;
 }
