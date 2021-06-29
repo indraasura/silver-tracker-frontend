@@ -45,7 +45,7 @@ class App extends Component {
   }
 
   getOnyxData = () => {
-    axios.get(`http://localhost:5000/api/allData/onyx`)
+    axios.get(`http://localhost:5000/api/allData/Onyx`)
       .then(result => { return result.data })
       .then(data => {
         //console.log(data)
@@ -57,7 +57,7 @@ class App extends Component {
   }
 
   getTopazData = () => {
-    axios.get(`http://localhost:5000/api/allData/topaz`)
+    axios.get(`http://localhost:5000/api/allData/Topaz`)
       .then(result => { return result.data })
       .then(data => {
         //console.log(data)
@@ -69,7 +69,7 @@ class App extends Component {
   }
 
   getEmeraldData = () => {
-    axios.get(`http://localhost:5000/api/allData/emerald`)
+    axios.get(`http://localhost:5000/api/allData/Emerald`)
       .then(result => { return result.data })
       .then(data => {
         //console.log(data)
@@ -84,6 +84,9 @@ class App extends Component {
     const societyData = { ...this.state.societyData }
     const { totalPopulation, totalCases, totalActive, totalRecovered, totalDeaths, totalVaccinated } = societyData
     const buildingData = { ...this.state.buildingData }
+    const onyxData = { ...this.state.onyxData }
+    const topazData = { ...this.state.topazData }
+    const emeraldData = { ...this.state.emeraldData }
     return (
       <div className="landing-wrapper">
         <div className="header-container">
@@ -119,6 +122,9 @@ class App extends Component {
           </ul>
           <div className="houseStat-wrapper">
             <HouseStats houseData={buildingData}/>
+            <HouseStats houseData={onyxData}/>
+            <HouseStats houseData={topazData}/>
+            <HouseStats houseData={emeraldData}/>
           </div>
         </div>
 
